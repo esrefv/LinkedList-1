@@ -23,7 +23,7 @@ class LinkedList{ // It holds the first value of the list
         head=null;
     }
     
-    public Node Find(int key){ // Search for the key value in the list
+    public Node find(int key){ // Search for the key value in the list
         Node active = head;
         
         if(head != null){
@@ -38,8 +38,8 @@ class LinkedList{ // It holds the first value of the list
     }
     
     
-    public void AddHead(int newValue){ // For this method to add value to the first order of the list 
-        Node value = Find(newValue);
+    public void addHead(int newValue){ // For this method to add value to the first order of the list 
+        Node value = find(newValue);
         if(value == null){
             Node newNode = new Node(newValue);
             newNode.next = head;
@@ -49,8 +49,8 @@ class LinkedList{ // It holds the first value of the list
             System.out.println("This -> "+ newValue +" value is not added to this list because there is value in the list");   
     }
     
-    public void AddEnd(int newValue){ // For this method to add value to the last order of the list
-        Node value = Find(newValue);
+    public void addEnd(int newValue){ // For this method to add value to the last order of the list
+        Node value = find(newValue);
         if(value == null){
             Node newNode = new Node(newValue);
             Node active = head;
@@ -69,8 +69,8 @@ class LinkedList{ // It holds the first value of the list
     }
     
     
-    public void AddBetween(int newValue, int order){ // For this method to add value to the what if we wanted to order? of the list
-        Node value = Find(newValue);
+    public void addBetween(int newValue, int order){ // For this method to add value to the what if we wanted to order? of the list
+        Node value = find(newValue);
         if(value == null){
             Node newNode = new Node(newValue);
             Node active = head;
@@ -122,7 +122,7 @@ class LinkedList{ // It holds the first value of the list
     
     
     public void deleteNode(int Key){ // This method is to delete nodes
-        Node value = Find(Key);
+        Node value = find(Key);
         if(value == null)
             System.out.println("There is no this -> " + Key + " key value that you want to  delete in this list");
         else{

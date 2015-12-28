@@ -9,23 +9,23 @@ public class LinkedList1 {
         
         LinkedList list = new LinkedList();
         
-        for(int i=0; i<=20; i=i+3) list.AddEnd(i);
+        for(int i=0; i<=20; i=i+3) list.addEnd(i);
         
         list.printList();
         
-        list.AddHead(12);
+        list.addHead(12);
         list.printList();
         
-        list.AddHead(55);
+        list.addHead(55);
         list.printList();
         
-        list.AddEnd(99);
+        list.addEnd(99);
         list.printList();
         
-        list.AddBetween(49, 4);
+        list.addBetween(49, 4);
         list.printList();
         
-        list.AddBetween(210, 7);
+        list.addBetween(210, 7);
         list.printList();
         
         list.deleteHead();
